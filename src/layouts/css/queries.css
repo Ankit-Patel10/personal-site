@@ -1,0 +1,116 @@
+/* Small-medium width tablets: iPad mini */
+
+@media only screen and (min-width: 768px max-width: 1023px) {
+  h1 {
+    font-size: 320%;
+  }
+
+  .about-text {
+    max-width: 480px;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .resume {
+    font-size: 90%;
+  }
+
+  .resume-left {
+    width: 60%;
+  }
+
+  .resume-right {
+    width: 40%;
+  }
+
+  .footer {
+    font-size: 90%;
+  }
+}
+
+/* Small phone screens*/
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .header a {
+    font-size: 90%;
+  }
+
+  .children {
+    max-width: 100%;
+  }
+
+  .about-text {
+    font-size: 82%;
+    max-width: 275px;
+  }
+
+  .projects {
+    font-size: 95%;
+  }
+
+  .project-img {
+    height: 125px;
+  }
+
+  .project-wrapper {
+    max-width: 240px;
+  }
+
+  .resume-left, .resume-right {
+    display: block;
+    padding: 0px 5px;
+    width: 100%;
+  }
+
+  .span span {
+    display: block;
+  }
+
+  .t2, .t4 {
+    float: none;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .resume {
+    font-size: 95%;
+  }
+
+  .footer {
+    font-size: 85%;
+  }
+}
+
+/* Very narrow screens: iPhone 4, 5 and 5s */
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 220%;
+  }
+
+  .about-text {
+    max-width: 240px;
+  }
+
+  .project-img {
+    height: 110px;
+  }
+
+  .resume {
+    font-size: 95%;
+  }
+
+  .footer {
+    font-size: 85%;
+  }
+}
