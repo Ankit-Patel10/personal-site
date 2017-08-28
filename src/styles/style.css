@@ -89,7 +89,7 @@ a.selected {
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 5, 0.25), rgba(0, 0, 5, 0.25)),
-  url(./img/website-header.png);
+  url(../img/website-header.png);
   background-position: center;
   margin-bottom: 25px;
   text-align: center;
