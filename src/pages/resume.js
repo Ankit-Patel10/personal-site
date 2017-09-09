@@ -79,7 +79,7 @@ class ResumePage extends React.Component {
               }
             />
             <ResumeSpan
-              name='Messenger LaTeX'
+              name='Study Space Executive'
               location='High School'
               ref='http://studyspacewchs.com'
               link='studyspacewchs.com'
