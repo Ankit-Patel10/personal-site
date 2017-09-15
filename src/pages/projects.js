@@ -19,14 +19,28 @@ class ProjectsPage extends React.Component {
         Facebook Messenger.
       </p>
 
+    const ayaDesc =
+      <p>
+        A robotic head powered by a Raspberry Pi that uses
+        <span className='emphasis'> Amazon Web Services </span>
+        for image recognition and text-to-speech output.
+        Developed
+        <span className='emphasis'> Python </span>
+        backend and used
+        <span className='emphasis'> Tensorflow </span>
+        to create a custom algorithm for determining label relevancy.
+      </p>
+
     return (
-      <Project
-        name='Messenger LaTeX'
-        desc={messengerDesc}
-        link='http://devpost.com/software/messenger-latex'
-        img={messengerLatexLogo}
-        alt='Messenger LaTeX Logo'
-      />
+      <div>
+        <Project
+          name='Messenger LaTeX'
+          desc={messengerDesc}
+          link='http://devpost.com/software/messenger-latex'
+          img={messengerLatexLogo}
+          alt='Messenger LaTeX Logo'
+        />
+      </div>
     );
   }
 }

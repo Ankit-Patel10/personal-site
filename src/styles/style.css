@@ -133,21 +133,22 @@ a.selected {
 /* PROJECTS */
 
 .projects {
-  margin-top: 40px;
+  justify-content: center;
 }
 
 .project-wrapper {
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: #fff;
   max-width: 300px;
   border: 1px solid #777;
   border-radius: 7px;
+  height: 400px;
 }
 
 .project-img {
   display: block;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 3px;
   height: 155px;
 }
 
@@ -200,7 +201,7 @@ a.selected {
   text-align: left;
   color: #3d85c6;
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .t2 {
@@ -208,6 +209,7 @@ a.selected {
   float: right;
   font-weight: bold;
   color: #818181;
+  padding-top: 7px;
 }
 
 .t3 {
@@ -252,7 +254,7 @@ a.selected {
   display: inline-block;
   font-size:  80%;
   font-style: normal;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 .section {
@@ -261,6 +263,11 @@ a.selected {
 
 .slash {
   color: #3d85c6;
+}
+
+.resume-link:hover {
+  color: #3d85c6;
+  transition: 0.4s;
 }
 
 /* NOT FOUND */
