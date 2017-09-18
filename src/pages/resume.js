@@ -58,7 +58,7 @@ class ResumePage extends React.Component {
               date='Sept 2017'
               desc={
                 <p>
-                  A clone of the popular board game built using React and
+                  A clone of the popular board game written in React and
                   Meteor.
                 </p>
               }
@@ -83,10 +83,10 @@ class ResumePage extends React.Component {
               date='Sept 2017'
               desc={
                 <p>
-                   A robotic head powered by a Raspberry Pi that uses AWS for
-                   image recognition and text-to-speech output. Developed Python
-                   backend and used TensorFlow to create a custom algorithm for
-                   determining label relevancy.
+                  A robotic head powered by a Raspberry Pi using AWS for image
+                  recognition and text-to-speech output. Built Python backend
+                  and worked on implementing k-means clustering for determining
+                  image label relevancy. Finalist for Hack the North.
                 </p>
               }
             />
@@ -98,10 +98,10 @@ class ResumePage extends React.Component {
               date='Jun 2017'
               desc={
                 <p>
-                  A Chrome extension built with JavaScript and MathJax
-                  that allows LaTeX to be rendered in Facebook Messenger.
-                  Developed the live preview, clicking to copy equations, and PNG
-                  rendering. First place submission for MHacks Nano.
+                  A Chrome extension built with JavaScript and MathJax that
+                  renders LaTeX in Facebook Messenger. Developed a live preview,
+                  clicking to copy equations, and PNG rendering. Won first place
+                  in MHacks Nano.
                 </p>
               }
             />
@@ -113,7 +113,7 @@ class ResumePage extends React.Component {
               date='Nov 2016 - May 2017'
               desc={
                 <p>
-                  Developed a website using HTML, CSS and JavaScript for my
+                  Created a website using HTML, CSS and JavaScript for my
                   high school’s tutoring club to host study packets for courses
                   in the maths and sciences. Organized and led weekly executive
                   meetings and tutoring sessions for over 100 students.

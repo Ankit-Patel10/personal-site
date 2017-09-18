@@ -92,6 +92,7 @@ a.selected {
   url(../img/website-header.png);
   background-position: center;
   margin-bottom: 25px;
+  background-attachment: fixed;
   text-align: center;
   overflow: auto;
 }
