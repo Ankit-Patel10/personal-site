@@ -9,7 +9,7 @@ class ResumePage extends React.Component {
     return (
       <div className='resume'>
         <div className='resume-left'>
-          <div className='section'>
+          {/*}<div className='section'>
             <h3>Experience</h3>
             <ResumeSpan
               name='Waterloop'
@@ -18,26 +18,26 @@ class ResumePage extends React.Component {
               date='Sept 2017 - Present'
               desc={
                 <div>
-                  <li>Built software backend using Go for hyperloop pod
-                  competition team</li>
+                  <p>&#183; Built software backend using Go for hyperloop pod
+                  competition team</p>
                 </div>
               }
             />
-          </div>
+          </div>*/}
 
           <div className='section projects'>
             <h3>Projects</h3>
-            {/*}<ResumeSpan
+            <ResumeSpan
               name='React Ticket to Ride'
               location='Personal'
               link='https://github.com/cloudedwindow/react-ticket-to-ride'
               text='github.com/cloudedwindow/react-ticket-to-ride'
               date='Sept 2017'
               desc={
-                <li>A digital version of the popular board game written in
-                React and Meteor</li>
+                <p>&#183; A digital version of the popular board game written in
+                React and Meteor</p>
               }
-            />*/}
+            />
             <ResumeSpan
               name='Rate My Hack'
               location='MHacks X'
@@ -46,10 +46,10 @@ class ResumePage extends React.Component {
               date='Sept 2017'
               desc={
                 <div>
-                  <li>Web app that provides feedback for hackathon ideas based
-                  on ML algorithm trained on past Devpost submissions</li>
-                  <li>Created front-end using React and developed Python
-                  backend to analyze and scrape data</li>
+                  <p>&#183; Web app that provides feedback for hackathon ideas based
+                  on ML algorithm trained on past Devpost submissions</p>
+                  <p>&#183; Created front-end using React and developed Python
+                  backend to analyze and scrape data</p>
                 </div>
               }
             />
@@ -61,10 +61,10 @@ class ResumePage extends React.Component {
               date='Sept 2017'
               desc={
               <div>
-                <li>A robotic head powered by a Raspberry Pi using AWS for image
-                recognition and text-to-speech output</li>
-                <li>Built Python backend and worked on implementing k-means
-                clustering for determining image label relevancy</li>
+                <p>&#183; A robotic head powered by a Raspberry Pi using AWS for image
+                recognition and text-to-speech output</p>
+                <p>&#183; Built Python backend and worked on implementing k-means
+                clustering for determining image label relevancy</p>
               </div>
               }
             />
@@ -76,10 +76,10 @@ class ResumePage extends React.Component {
               date='Jun 2017'
               desc={
                 <div>
-                  <li>Chrome extension built with JavaScript and MathJax to
-                  render LaTeX in Facebook Messenger</li>
-                  <li>Developed a live preview, clicking to copy equations, and
-                  PNG rendering</li>
+                  <p>&#183; Chrome extension built with JavaScript and MathJax to
+                  render LaTeX in Facebook Messenger</p>
+                  <p>&#183; Developed a live preview, clicking to copy equations, and
+                  PNG rendering</p>
                 </div>
               }
             />
@@ -91,10 +91,10 @@ class ResumePage extends React.Component {
               date='Nov 2016 - May 2017'
               desc={
                 <div>
-                  <li>Created website using HTML, CSS, JavaScript for high school
-                  tutoring club to host study packets in maths and sciences</li>
-                  <li>Organized and led weekly executive meetings and tutoring
-                  sessions for over 100 students</li>
+                  <p>&#183; Created website using HTML, CSS, JavaScript for high school
+                  tutoring club to host study packets in maths and sciences</p>
+                  <p>&#183; Organized and led weekly executive meetings and tutoring
+                  sessions for over 100 students</p>
                 </div>
               }
             />
@@ -108,7 +108,7 @@ class ResumePage extends React.Component {
               text='Bachelor of Software Engineering'
               date='Sept 2017 - Present'
             />
-            <ResumeSpan
+            {/*}<ResumeSpan
               name='Western Canada High School'
               location='Calgary, Canada'
               text='International Baccalaureate Diploma'
@@ -120,7 +120,7 @@ class ResumePage extends React.Component {
                   <span>Grade 12 Male Citizen of the Year</span>
                 </p>
               }
-            />
+            />*/}
           </div>
         </div>
 
@@ -155,10 +155,9 @@ class ResumePage extends React.Component {
 
           <div className='section skills'>
             <h3>Skills</h3>
-            <div className='t1'>Proficient</div>
+            <div className='t1'>Knowledgeable</div>
             <p> C++{slash}Java{slash}Python{slash}Go<br/>
-                HTML{slash}CSS{slash}
-                Javascript<br/>
+                HTML{slash}CSS{slash}JavaScript<br/>
                 React{slash}Node{slash}Meteor
             </p>
             <div className='t1'>Prior Experience</div>
@@ -176,7 +175,7 @@ class ResumePage extends React.Component {
             <p>
               Algorithms by <i>Princeton</i> <br/>
               Machine Learning by <i>Stanford</i> <br/>
-              Complete Unreal Engine 4 Development Course by <i>Ben Tristem</i>
+              Complete Unreal Engine 4 Dev Course by <i>Ben Tristem on Udemy</i>
             </p>
           </div>
 
