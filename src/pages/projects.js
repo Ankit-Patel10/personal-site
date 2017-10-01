@@ -2,6 +2,7 @@ import React from 'react'
 import Project from '../components/Project.js'
 
 import messengerLatexLogo from '../img/messenger-latex.png'
+import ayaPicture from '../img/aya.jpg'
 
 class ProjectsPage extends React.Component {
   render() {
@@ -32,13 +33,16 @@ class ProjectsPage extends React.Component {
       </p>
 
     return (
-      <div>
+      <div className='project-row'>
         <Project
-          name='Messenger LaTeX'
-          desc={messengerDesc}
           link='http://devpost.com/software/messenger-latex'
           img={messengerLatexLogo}
           alt='Messenger LaTeX Logo'
+        />
+        <Project
+          link='http://devpost.com/software/aya'
+          img={ayaPicture}
+          alt='Aya Picture'
         />
       </div>
     );

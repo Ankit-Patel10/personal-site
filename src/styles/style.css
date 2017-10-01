@@ -1,9 +1,6 @@
 /* FONTS */
-
-@import url('https://fonts.googleapis.com/css?family=Questrial|Open+Sans:300|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open+Sans:300|Raleway:300,400,500');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-
-/* SETUP */
 
 * {
     margin: 0;
@@ -57,10 +54,10 @@ h2 {
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 500;
   color: #222;
-  font-size: 120%;
-  padding: 0px 0px 7px 0px;
+  font-size: 130%;
+  padding: 5px 0px 7px 0px;
 }
 
 /* LINKS AND ICONS*/
@@ -88,7 +85,7 @@ a.selected {
 /* HEADER */
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 5, 0.25), rgba(0, 0, 5, 0.25)),
+  background-image: linear-gradient(rgba(0, 0, 5, 0.20), rgba(0, 0, 5, 0.20)),
   url(../img/website-header.png);
   background-position: center;
   margin-bottom: 25px;
@@ -133,28 +130,29 @@ a.selected {
 
 /* PROJECTS */
 
-.projects {
-  justify-content: center;
-}
-
-.project-wrapper {
-  margin: 10px auto;
-  background-color: #fff;
-  max-width: 300px;
-  border: 1px solid #777;
-  border-radius: 7px;
-  height: 400px;
-}
-
-.project-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 3px;
-  height: 155px;
+.project-row {
+  width: 410px;
+  height: auto;
+  margin: 15% auto;
+  vertical-align: middle;
 }
 
 .project-link {
-  display: block;
+  padding: 0px;
+}
+
+.project-img {
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 155px;
+  }
+
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+  padding: 0px 25px;
+  width: 205px;
+  height: 175px;
 }
 
 .project-text {
@@ -162,7 +160,6 @@ a.selected {
 }
 
 .project-text p {
-  padding: 0px 20px 25px 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 85%;
 }
@@ -183,10 +180,11 @@ a.selected {
   padding: 0px 0px;
 }
 
-.resume-left p {
+.description {
   font-size: 80%;
   text-align: justify;
   line-height: 1.4;
+  list-style-position: inside;
 }
 
 .section span {
@@ -194,21 +192,21 @@ a.selected {
 }
 
 .t1, .t2, .t3, .t4 {
-  font-size: 80%;
+  font-size: 85%;
   padding: 2px 0px;
 }
 
 .t1 {
   text-align: left;
   color: #3d85c6;
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 7px;
 }
 
 .t2 {
   text-align: right;
   float: right;
-  font-weight: bold;
+  font-weight: 500;
   color: #818181;
   padding-top: 7px;
 }

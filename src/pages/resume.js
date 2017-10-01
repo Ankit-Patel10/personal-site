@@ -10,6 +10,97 @@ class ResumePage extends React.Component {
       <div className='resume'>
         <div className='resume-left'>
           <div className='section'>
+            <h3>Experience</h3>
+            <ResumeSpan
+              name='Waterloop'
+              location='Calgary, Canada'
+              text='Back-end Software Team'
+              date='Sept 2017 - Present'
+              desc={
+                <div>
+                  <li>Built software backend using Go for hyperloop pod
+                  competition team</li>
+                </div>
+              }
+            />
+          </div>
+
+          <div className='section projects'>
+            <h3>Projects</h3>
+            {/*}<ResumeSpan
+              name='React Ticket to Ride'
+              location='Personal'
+              link='https://github.com/cloudedwindow/react-ticket-to-ride'
+              text='github.com/cloudedwindow/react-ticket-to-ride'
+              date='Sept 2017'
+              desc={
+                <li>A digital version of the popular board game written in
+                React and Meteor</li>
+              }
+            />*/}
+            <ResumeSpan
+              name='Rate My Hack'
+              location='MHacks X'
+              link='https://devpost.com/software/rate-my-hack'
+              text='devpost.com/software/rate-my-hack'
+              date='Sept 2017'
+              desc={
+                <div>
+                  <li>Web app that provides feedback for hackathon ideas based
+                  on ML algorithm trained on past Devpost submissions</li>
+                  <li>Created front-end using React and developed Python
+                  backend to analyze and scrape data</li>
+                </div>
+              }
+            />
+            <ResumeSpan
+              name='Aya'
+              location='Finalist and AWS Award - Hack the North'
+              link='https://devpost.com/software/aya'
+              text='devpost.com/software/aya'
+              date='Sept 2017'
+              desc={
+              <div>
+                <li>A robotic head powered by a Raspberry Pi using AWS for image
+                recognition and text-to-speech output</li>
+                <li>Built Python backend and worked on implementing k-means
+                clustering for determining image label relevancy</li>
+              </div>
+              }
+            />
+            <ResumeSpan
+              name='Messenger LaTeX'
+              location='First Place - MHacks Nano'
+              link='https://devpost.com/software/messenger-latex'
+              text='devpost.com/software/messenger-latex'
+              date='Jun 2017'
+              desc={
+                <div>
+                  <li>Chrome extension built with JavaScript and MathJax to
+                  render LaTeX in Facebook Messenger</li>
+                  <li>Developed a live preview, clicking to copy equations, and
+                  PNG rendering</li>
+                </div>
+              }
+            />
+            <ResumeSpan
+              name='Study Space President'
+              location='High School'
+              link='http://studyspacewchs.com'
+              text='studyspacewchs.com'
+              date='Nov 2016 - May 2017'
+              desc={
+                <div>
+                  <li>Created website using HTML, CSS, JavaScript for high school
+                  tutoring club to host study packets in maths and sciences</li>
+                  <li>Organized and led weekly executive meetings and tutoring
+                  sessions for over 100 students</li>
+                </div>
+              }
+            />
+          </div>
+
+          <div className='section education'>
             <h3>Education</h3>
             <ResumeSpan
               name='University of Waterloo'
@@ -27,96 +118,6 @@ class ResumePage extends React.Component {
                   <span>96% Cumulative Average</span>
                   {slash}
                   <span>Grade 12 Male Citizen of the Year</span>
-                </p>
-              }
-            />
-          </div>
-
-          {/*<div className='section'>
-            <h3>Experience</h3>
-            <ResumeSpan
-              name='Waterloop'
-              location='Calgary, Canada'
-              text='Web Development Team'
-              date='Sept 2017 - Present'
-              desc={
-                <p>
-                  Developed a virtual rendering of hyperloop pod design that
-                  can be viewed through web browsers.
-                </p>
-              }
-            />
-          </div>*/}
-
-          <div className='section projects'>
-            <h3>Projects</h3>
-            <ResumeSpan
-              name='React Ticket to Ride'
-              location='Personal'
-              link='https://github.com/cloudedwindow/react-ticket-to-ride'
-              text='github.com/cloudedwindow/react-ticket-to-ride'
-              date='Sept 2017'
-              desc={
-                <p>
-                  A clone of the popular board game written in React and
-                  Meteor.
-                </p>
-              }
-            />
-            {/*<ResumeSpan
-              name='Android App'
-              location='MHacks X'
-              link='https://devpost.com/software/mhacks-x'
-              text='devpost.com/software/mhacks-x'
-              date='Sept 2017'
-              desc={
-                <p>
-                   An android app.
-                </p>
-              }
-            />*/}
-            <ResumeSpan
-              name='Aya'
-              location='Hack the North'
-              link='https://devpost.com/software/aya'
-              text='devpost.com/software/aya'
-              date='Sept 2017'
-              desc={
-                <p>
-                  A robotic head powered by a Raspberry Pi using AWS for image
-                  recognition and text-to-speech output. Built Python backend
-                  and worked on implementing k-means clustering for determining
-                  image label relevancy. Finalist for Hack the North.
-                </p>
-              }
-            />
-            <ResumeSpan
-              name='Messenger LaTeX'
-              location='MHacks Nano'
-              link='https://devpost.com/software/messenger-latex'
-              text='devpost.com/software/messenger-latex'
-              date='Jun 2017'
-              desc={
-                <p>
-                  A Chrome extension built with JavaScript and MathJax that
-                  renders LaTeX in Facebook Messenger. Developed a live preview,
-                  clicking to copy equations, and PNG rendering. Won first place
-                  in MHacks Nano.
-                </p>
-              }
-            />
-            <ResumeSpan
-              name='Study Space President'
-              location='High School'
-              link='http://studyspacewchs.com'
-              text='studyspacewchs.com'
-              date='Nov 2016 - May 2017'
-              desc={
-                <p>
-                  Created a website using HTML, CSS and JavaScript for my
-                  high school’s tutoring club to host study packets for courses
-                  in the maths and sciences. Organized and led weekly executive
-                  meetings and tutoring sessions for over 100 students.
                 </p>
               }
             />
@@ -155,26 +156,25 @@ class ResumePage extends React.Component {
           <div className='section skills'>
             <h3>Skills</h3>
             <div className='t1'>Proficient</div>
-            <p> C++{slash}Java{slash}Python<br/>
+            <p> C++{slash}Java{slash}Python{slash}Go<br/>
                 HTML{slash}CSS{slash}
                 Javascript<br/>
                 React{slash}Node{slash}Meteor
             </p>
+            <div className='t1'>Prior Experience</div>
+            <p>
+              Unreal Engine 4{slash}Blender 3D
+            </p>
             <div className='t1'>Academically Exposed</div>
             <p>
               MATLAB{slash}Octave
-            </p>
-            <div className='t1'>Prior Experience</div>
-            <p>
-              Go{slash}Solidity<br/>
-              Unreal Engine 4{slash}Blender 3D
             </p>
           </div>
 
           <div className='section coursework'>
             <h3>Relevant Coursework</h3>
             <p>
-              Algorithms I & II by <i>Princeton</i> <br/>
+              Algorithms by <i>Princeton</i> <br/>
               Machine Learning by <i>Stanford</i> <br/>
               Complete Unreal Engine 4 Development Course by <i>Ben Tristem</i>
             </p>

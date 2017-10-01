@@ -16,7 +16,9 @@ class ResumeSpan extends React.Component {
           </span>
           <span className='t4'>{this.props.date}</span>
         </div>
-        {this.props.desc}
+        <ul className='description'>
+            {this.props.desc}
+        </ul>
       </div>
     );
   }
