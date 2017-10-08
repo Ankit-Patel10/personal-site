@@ -70,12 +70,9 @@ a {
   padding: 30px 15px 15px 15px;
 }
 
-a:hover {
-  color: #79B773;
-}
-
+a:hover,
 a.selected {
-    color: #79B773;
+  color: #79B773;
 }
 
 .icon {
@@ -181,7 +178,7 @@ a.selected {
 }
 
 .description {
-  font-size: 80%;
+  font-size: 85%;
   text-align: justify;
 }
 
@@ -189,9 +186,18 @@ a.selected {
   display: inline-block;
 }
 
-.t1, .t2, .t3, .t4 {
-  font-size: 85%;
+.resume-left .t1, .resume-left .t2, .resume-left .t3, .resume-left .t4 {
+  font-size: 83%;
   padding: 2px 0px;
+}
+
+.resume-right .t2 {
+  font-size: 80%;
+  float: left !important;
+}
+
+.resume-right .t1 {
+  font-size: 85%;
 }
 
 .t1 {
@@ -249,9 +255,9 @@ a.selected {
 
 .resume-right p {
   display: inline-block;
-  font-size:  80%;
+  font-size: 85%;
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .section {

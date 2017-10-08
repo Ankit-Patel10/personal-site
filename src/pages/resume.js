@@ -9,21 +9,21 @@ class ResumePage extends React.Component {
     return (
       <div className='resume'>
         <div className='resume-left'>
-          {/*}<div className='section'>
+          <div className='section'>
             <h3>Experience</h3>
             <ResumeSpan
               name='Waterloop'
-              location='Calgary, Canada'
-              text='Back-end Software Team'
+              location='Waterloo, ON'
+              text='Back End Software Team'
               date='Sept 2017 - Present'
               desc={
                 <div>
-                  <p>&#183; Built software backend using Go for hyperloop pod
+                  <p>&#183; Built software backend for hyperloop pod
                   competition team</p>
                 </div>
               }
             />
-          </div>*/}
+          </div>
 
           <div className='section projects'>
             <h3>Projects</h3>
@@ -99,29 +99,6 @@ class ResumePage extends React.Component {
               }
             />
           </div>
-
-          <div className='section education'>
-            <h3>Education</h3>
-            <ResumeSpan
-              name='University of Waterloo'
-              location='Waterloo, Canada'
-              text='Bachelor of Software Engineering'
-              date='Sept 2017 - Present'
-            />
-            {/*}<ResumeSpan
-              name='Western Canada High School'
-              location='Calgary, Canada'
-              text='International Baccalaureate Diploma'
-              date='Sept 2014 - Jun 2017'
-              desc={
-                <p>
-                  <span>96% Cumulative Average</span>
-                  {slash}
-                  <span>Grade 12 Male Citizen of the Year</span>
-                </p>
-              }
-            />*/}
-          </div>
         </div>
 
         <div className='resume-right'>
@@ -156,16 +133,13 @@ class ResumePage extends React.Component {
           <div className='section skills'>
             <h3>Skills</h3>
             <div className='t1'>Knowledgeable</div>
-            <p> C++{slash}Java{slash}Python{slash}Go<br/>
+            <p> C++{slash}C{slash}Java{slash}Python<br/>
                 HTML{slash}CSS{slash}JavaScript<br/>
-                React{slash}Node{slash}Meteor
+                React{slash}Node{slash}Go
             </p>
             <div className='t1'>Prior Experience</div>
             <p>
-              Unreal Engine 4{slash}Blender 3D
-            </p>
-            <div className='t1'>Academically Exposed</div>
-            <p>
+              Unreal Engine 4{slash}Blender 3D<br/>
               MATLAB{slash}Octave
             </p>
           </div>
@@ -186,6 +160,20 @@ class ResumePage extends React.Component {
                 Cryptocurrency{slash}Video Games<br/>
                 Machine Learning{slash}Hackathons
               </p>
+          </div>
+
+          <div className='section education'>
+            <h3>Education</h3>
+              <div className='t1'>University of Waterloo</div>
+              <div className='t2'>Bachelor of Software Engineering</div>
+              <p>2017 - 2022{slash}Waterloo, Canada</p>
+            {/*
+              <div className='t1'>Western Canada High School</div>
+              <div className='t2'>International Baccalaureate Diploma</div>
+              <p>2014 - 2017{slash}Calgary, AB</p>
+              <p>&#183; 96% Cumulative Average</p>
+              <p>&#183; Grade 12 Male Citizen of the Year</p>
+            */}
           </div>
         </div>
       </div>
