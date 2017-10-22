@@ -18,7 +18,7 @@ class ResumePage extends React.Component {
               date='Sept 2017 - Present'
               desc={
                 <div>
-                  <p>&#183; Built software backend for hyperloop pod
+                  <p>&#183; Built pod communications backend for hyperloop
                   competition team</p>
                 </div>
               }
@@ -30,11 +30,11 @@ class ResumePage extends React.Component {
             <ResumeSpan
               name='React Ticket to Ride'
               location='Personal'
-              link='https://github.com/cloudedwindow/react-ticket-to-ride'
-              text='github.com/cloudedwindow/react-ticket-to-ride'
+              link='https://github.com/edwinzhng/react-ticket-to-ride'
+              text='github.com/edwinzhng/react-ticket-to-ride'
               date='Sept 2017'
               desc={
-                <p>&#183; A digital version of the popular board game written in
+                <p>&#183; A digital version of the popular board game built with
                 React and Meteor</p>
               }
             />
@@ -47,7 +47,7 @@ class ResumePage extends React.Component {
               desc={
                 <div>
                   <p>&#183; Web app that provides feedback for hackathon ideas based
-                  on ML algorithm trained on past Devpost submissions</p>
+                  on ML algorithm trained with past Devpost submissions</p>
                   <p>&#183; Created front-end using React and developed Python
                   backend to analyze and scrape data</p>
                 </div>
@@ -61,10 +61,9 @@ class ResumePage extends React.Component {
               date='Sept 2017'
               desc={
               <div>
-                <p>&#183; A robotic head powered by a Raspberry Pi using AWS for image
-                recognition and text-to-speech output</p>
-                <p>&#183; Built Python backend and worked on implementing k-means
-                clustering for determining image label relevancy</p>
+                <p>&#183; Robotic head powered by a Raspberry Pi with jaw movement</p>
+                <p>&#183; Built Python backend, worked on label selection algorithm,
+                and integrated AWS for text-to-speech output and image recognition</p>
               </div>
               }
             />
@@ -76,15 +75,15 @@ class ResumePage extends React.Component {
               date='Jun 2017'
               desc={
                 <div>
-                  <p>&#183; Chrome extension built with JavaScript and MathJax to
-                  render LaTeX in Facebook Messenger</p>
+                  <p>&#183; Chrome extension built with JavaScript and MathJax
+                  to render LaTeX in Facebook Messenger with over 200 users</p>
                   <p>&#183; Developed a live preview, clicking to copy equations, and
                   PNG rendering</p>
                 </div>
               }
             />
             <ResumeSpan
-              name='Study Space President'
+              name='Study Space Executive'
               location='High School'
               link='http://studyspacewchs.com'
               text='studyspacewchs.com'
@@ -105,10 +104,10 @@ class ResumePage extends React.Component {
           <div className='section contact'>
             <h3>Contact</h3>
             <ResumeContact
-              link='https://github.com/cloudedwindow'
+              link='https://github.com/edwinzhng'
               alt='GitHub'
               icon='icon ion-social-octocat'
-              text='github.com/cloudedwindow'
+              text='github.com/edwinzhng'
             />
             <ResumeContact
               link='https://linkedin.com/in/edwin-zhang'

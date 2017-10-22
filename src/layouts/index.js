@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children, location }) =>
         title='Edwin Zhang'
         meta={[
           { name: 'description', content: 'Software engineering student at the University of Waterloo.' },
-          { name: 'keywords', content: 'software, engineer, blockchain, machinelearning, webdev, waterloo, student' },
+          { name: 'keywords', content: 'software, engineer, waterloo, student' },
         ]}
       />
   		<div className='content'>

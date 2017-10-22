@@ -7,8 +7,8 @@ class IndexPage extends React.Component {
 				<h2>Hello world!</h2>
 				<p className='about-text'>
 					I'm currently a <b>first year software engineering student at the
-					University of Waterloo</b>. I have experience with web development
-					using React and Meteor. When I'm not programming, you can find me playing
+					University of Waterloo</b>. I'm interested in full-stack web development
+					and machine learning. When I'm not programming, you can find me playing
 					underwater hockey or the trombone.
 				</p>
 			</div>
