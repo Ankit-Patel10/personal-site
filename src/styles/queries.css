@@ -13,18 +13,6 @@
     height: 150px;
   }
 
-  .resume {
-    font-size: 90%;
-  }
-
-  .resume-left {
-    width: 60%;
-  }
-
-  .resume-right {
-    width: 40%;
-  }
-
   .footer {
     font-size: 90%;
   }
@@ -66,26 +54,6 @@
     max-width: 240px;
   }
 
-  .resume-left, .resume-right {
-    display: block;
-    padding: 0px 5px;
-    width: 100%;
-  }
-
-  .span span {
-    display: block;
-  }
-
-  .t2, .t4 {
-    float: none;
-    text-align: left;
-    white-space: nowrap;
-  }
-
-  .resume {
-    font-size: 95%;
-  }
-
   .footer {
     font-size: 85%;
   }
@@ -104,10 +72,6 @@
 
   .project-img {
     height: 110px;
-  }
-
-  .resume {
-    font-size: 95%;
   }
 
   .footer {
