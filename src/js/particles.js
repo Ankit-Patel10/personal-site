@@ -14,7 +14,7 @@ var particles = [];
 var numParticles = 125;
 var maxv = 1;
 
-function initParticles() {
+export function initParticles() {
   for(var i = 0; i < numParticles; i++){
     addParticle();
   }
@@ -39,7 +39,7 @@ function addParticle() {
   color.g = Math.round(color.g);
   color.b = Math.random() * (255 - 50) + 205;
   color.b = Math.round(color.b);
-  color.a = Math.random() * 0.45;
+  color.a = Math.random() * 0.4;
 
   var x0 = xmax * Math.random();
   var y0 = ymax * Math.random();
@@ -103,7 +103,7 @@ function draw() {
   }
 }
 
-function render() {
+export function render() {
   update();
   draw();
   requestAnimationFrame(render);

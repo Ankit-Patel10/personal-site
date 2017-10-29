@@ -4,7 +4,7 @@ class IndexPage extends React.Component {
 	render() {
 		return (
 			<div className='home'>
-				<div className ='header-name'>
+				<div className ='name'>
           <h1>Edwin Zhang</h1>
         </div>
 				<h2>Hello world!</h2>

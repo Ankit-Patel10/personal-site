@@ -1,10 +1,9 @@
 import React from 'react'
-import Project from '../components/Project.js'
-
-import '../styles/projects.css'
 
 class ProjectsPage extends React.Component {
   render() {
+    { /*
+
     const messengerDesc =
       <p>
         A
@@ -30,15 +29,18 @@ class ProjectsPage extends React.Component {
         <span className='emphasis'> Tensorflow </span>
         to create a custom algorithm for determining label relevancy.
       </p>
+      */ }
 
     return (
       <div className='project-row'>
+        { /*
         <Project
           link='http://devpost.com/software/messenger-latex'
         />
         <Project
           link='http://devpost.com/software/aya'
         />
+        */ }
       </div>
     );
   }
