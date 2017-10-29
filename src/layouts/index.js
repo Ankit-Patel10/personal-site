@@ -27,7 +27,6 @@ class TransitionHandler extends React.Component {
 
 const TemplateWrapper = ({ children, location }) =>
   <div>
-    <Canvas />
     <Helmet
       title='Edwin Zhang'
       meta={[
@@ -35,6 +34,7 @@ const TemplateWrapper = ({ children, location }) =>
         { name: 'keywords', content: 'software, engineer, waterloo, student' },
       ]}
     />
+    <Canvas />
     <TransitionGroup>
       <CSSTransition
         key={location.pathname}
