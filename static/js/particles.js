@@ -11,10 +11,10 @@ var rmin  = 0.9;
 var count = 0;
 
 var particles = [];
-var numParticles = 125;
+var numParticles = 200;
 var maxv = 1;
 
-export function initParticles() {
+function initParticles() {
   for(var i = 0; i < numParticles; i++){
     addParticle();
   }
@@ -39,12 +39,12 @@ function addParticle() {
   color.g = Math.round(color.g);
   color.b = Math.random() * (255 - 50) + 205;
   color.b = Math.round(color.b);
-  color.a = Math.random() * 0.4;
+  color.a = Math.random() * 0.40;
 
   var x0 = xmax * Math.random();
   var y0 = ymax * Math.random();
-  var vx = (x0 - centerx) / 250;
-  var vy = (y0 - centery) / 250;
+  var vx = (x0 - centerx) / 240;
+  var vy = (y0 - centery) / 240;
 
   var c = circle(x0, y0, rmin + rmax * (Math.random() ** 2), color, vx, vy);
   particles.push(c);
@@ -53,9 +53,9 @@ function addParticle() {
 function resetParticle(i) {
   var x0 = Math.random() * (0.65 * xmax - 0.35 * xmax) + (0.35 * xmax);
   var y0 = Math.random() * (0.65 * ymax - 0.35 * ymax) + (0.35 * ymax);
-  var vx = (x0 - centerx) / 210;
-  var vy = (y0 - centery) / 210;
-  if(count % 40 == 0) {
+  var vx = (x0 - centerx) / 200;
+  var vy = (y0 - centery) / 200;
+  if(count % 30 == 0) {
     vx *= 3;
     vy *= 3;
     console.log(vx);
@@ -65,6 +65,7 @@ function resetParticle(i) {
   particles[i].y = y0;
   particles[i].vx = vx;
   particles[i].vy = vy;
+  particles[i].color.a = Math.random() * 0.01;
   count++;
  }
 
@@ -87,6 +88,10 @@ function update() {
     var y = particles[i].y;
     var r = particles[i].r;
 
+    if(particles[i].color.a < 0.4) {
+      particles[i].color.a += Math.random() * 0.001;
+    }
+
     if(x + r < 0 || y + r < 0 || x + r > canvas.width || y + r > canvas.height) {
       resetParticle(i);
     }
@@ -103,7 +108,7 @@ function draw() {
   }
 }
 
-export function render() {
+function render() {
   update();
   draw();
   requestAnimationFrame(render);

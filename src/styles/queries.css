@@ -1,16 +1,12 @@
 /* Small-medium width tablets: iPad mini */
 
 @media only screen and (min-width: 768px max-width: 1023px) {
-  h1 {
-    font-size: 320%;
+  .home h1 {
+    font-size: 300%;
   }
 
   .about-text {
-    max-width: 480px;
-  }
-
-  .project-img {
-    height: 150px;
+    max-width: 450px;
   }
 
   .footer {
@@ -21,37 +17,16 @@
 /* Small phone screens*/
 
 @media only screen and (max-width: 480px) {
-  h1 {
+  .home {
+    max-height: 300px;
+  }
+
+  .home h1 {
     font-size: 250%;
   }
 
-  h2 {
-    font-size: 120%;
-  }
-
-  .header a {
-    font-size: 90%;
-  }
-
-  .children {
-    max-width: 100%;
-  }
-
   .about-text {
-    font-size: 82%;
-    max-width: 275px;
-  }
-
-  .projects {
-    font-size: 95%;
-  }
-
-  .project-img {
-    height: 125px;
-  }
-
-  .project-wrapper {
-    max-width: 240px;
+    max-width: 350px;
   }
 
   .footer {
@@ -62,16 +37,12 @@
 /* Very narrow screens: iPhone 4, 5 and 5s */
 
 @media only screen and (max-width: 320px) {
-  h1 {
+  .home h1 {
     font-size: 220%;
   }
 
   .about-text {
-    max-width: 240px;
-  }
-
-  .project-img {
-    height: 110px;
+    max-width: 330px;
   }
 
   .footer {

@@ -32,6 +32,7 @@ const TemplateWrapper = ({ children, location }) =>
       meta={[
         { name: 'description', content: 'Software engineering student at the University of Waterloo.' },
         { name: 'keywords', content: 'software, engineer, waterloo, student' },
+        { name: 'viewport', content: 'width=device-width' }
       ]}
     />
     <Canvas />
