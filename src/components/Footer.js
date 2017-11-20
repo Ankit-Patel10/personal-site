@@ -3,11 +3,7 @@ import React from 'react'
 class Footer extends React.Component {
   render() {
     return (
-      <div className='footer' style={{
-        textAlign: 'center',
-        height: '90px',
-        marginBottom: '20px'
-      }}>
+      <div className='footer'>
        <a href='https://github.com/edwinzhng' target='_blank' className='git'>
          <i className='icon git ion-social-github transition'></i>
        </a>
