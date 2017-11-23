@@ -92,7 +92,7 @@ function update() {
       particles[i].color.a += Math.random() * 0.001;
     }
 
-    if(x + r < 0 || y + r < 0 || x + r > canvas.width || y + r > canvas.height) {
+    if(x + r < 0 || y + r < 0 || x - r > canvas.width || y - r > canvas.height) {
       resetParticle(i);
     }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
