@@ -17,35 +17,96 @@
 /* Small phone screens*/
 
 @media only screen and (max-width: 480px) {
+  @keyframes line_animation {
+    from { width: 0px; }
+    to { width: 290px; }
+  }
+
+  #canvas {
+    width: 0;
+    height: 0;
+  }
+
   .home {
-    max-height: 300px;
+    position: relative;
+    height: 640px;
+    max-width: 290px;
   }
 
   .home h1 {
-    font-size: 250%;
+    padding-top: 35px;
+    font-size: 300%;
+  }
+
+  .home h1:after {
+    width: 290px;
+    margin: 20px auto 5px auto;
+  }
+
+  .home h2 {
+    padding: 15px;
+    font-size: 125%;
   }
 
   .about-text {
-    max-width: 350px;
+    max-width: 290px;
+    font-size: 90%;
+    margin-bottom: 35px;
+  }
+
+  .home button {
+    font-size: 95%;
+  }
+
+  .children {
+    max-height: 100%;
+    margin-bottom: 0px;
   }
 
   .footer {
-    font-size: 85%;
+    position: relative;
+    height: 60px;
+    margin: 0px auto 40px auto;
+  }
+
+  .footer a {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
 /* Very narrow screens: iPhone 4, 5 and 5s */
 
 @media only screen and (max-width: 320px) {
+  @keyframes line_animation {
+    from { width: 0px; }
+    to { width: 220px; }
+  }
+
+  .home {
+    max-width: 220px;
+  }
+
   .home h1 {
-    font-size: 220%;
+    font-size: 250%;
+  }
+
+  .home h1:after {
+    width: 220px;
+    margin: 15px auto 0px auto;
   }
 
   .about-text {
-    max-width: 330px;
+    max-width: 220px;
   }
 
   .footer {
     font-size: 85%;
+    margin-top: 25px;
+  }
+
+  .footer a {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }

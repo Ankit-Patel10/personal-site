@@ -14,6 +14,7 @@ body, html{
 html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
     url(../img/website-bg.png);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -23,6 +24,10 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+}
+
+.children {
+  margin-bottom: -150px;
 }
 
 .transition {
@@ -69,7 +74,7 @@ html {
   height: 540px;
   width: 640px;
   animation-name: opacity_animation;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
   opacity: 100%;
 }
@@ -105,7 +110,7 @@ html {
 }
 
 .about-text {
-  margin: 0px auto 50px auto;
+  margin: 0px auto 45px auto;
   vertical-align: middle;
   text-align: justify;
   font-size: 95%;
@@ -139,9 +144,9 @@ html {
   text-transform: uppercase;
   background-color: transparent;
   font-size: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0px 15px 30px 15px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .home button:hover {
@@ -170,7 +175,7 @@ html {
   position: absolute;
   bottom: 0;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   width: 100%;
   height: 100px;
@@ -182,7 +187,7 @@ html {
   display: inline-block;
   color: #FEFEFE;
   text-decoration: none;
-  padding: 30px 15px 15px 15px;
+  padding: 40px 15px 15px 15px;
 }
 
 .footer .git:hover {
