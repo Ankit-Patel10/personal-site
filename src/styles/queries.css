@@ -1,16 +1,31 @@
 /* Small-medium width tablets: iPad mini */
 
-@media only screen and (min-width: 768px max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .home h1 {
-    font-size: 300%;
+    font-size: 400%;
   }
 
-  .about-text {
-    max-width: 450px;
+  .children {
+    min-height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .projects {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .projects h1 {
+    font-size: 400%;
   }
 
   .footer {
     font-size: 90%;
+  }
+
+  button {
+    margin: 15px 15px 0px 15px;
   }
 }
 
@@ -28,13 +43,12 @@
   }
 
   .home {
-    position: relative;
-    height: 640px;
+    padding-top: 30px;
+    height: 100%;
     max-width: 290px;
   }
 
   .home h1 {
-    padding-top: 35px;
     font-size: 300%;
   }
 
@@ -51,30 +65,53 @@
   .about-text {
     max-width: 290px;
     font-size: 90%;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
-  .home button {
+  button {
     font-size: 90%;
     padding: 10px 15px;
     margin-left: 7px;
     margin-right: 7px;
+    margin-bottom: 5px;
   }
 
-  .children {
-    max-height: 100%;
-    margin-bottom: 0px;
+  .projects {
+    padding-top: 30px;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .projects h1 {
+    font-size: 225%;
+  }
+
+  .project-box {
+    width: 275px;
+    height: 150px;
+  }
+
+  .project-name {
+    padding-top: 65px;
+    font-size: 100%;
+  }
+
+  .project-name:after {
+    margin: 10px auto 10px auto !important;
+  }
+
+  .caption {
+    width: 250px;
+    font-size: 80%;
+  }
+
+  .project-box:hover .caption {
+    padding-bottom: 30px;
   }
 
   .footer {
-    position: relative;
+    bottom: 0;
     height: 60px;
-    margin: 0px auto 40px auto;
-  }
-
-  .footer a {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 
@@ -83,11 +120,11 @@
 @media only screen and (max-width: 320px) {
   @keyframes line_animation {
     from { width: 0px; }
-    to { width: 220px; }
+    to { width: 235px; }
   }
 
   .home {
-    max-width: 230px;
+    max-width: 235px;
   }
 
   .home h1 {
@@ -95,12 +132,12 @@
   }
 
   .home h1:after {
-    width: 220px;
+    width: 235px;
     margin: 15px auto 0px auto;
   }
 
   .about-text {
-    max-width: 230px;
+    max-width: 235px;
   }
 
   .footer {
@@ -114,7 +151,6 @@
   }
 
   .home button {
-    font-size: 85%;
     padding: 10px 5px;
     margin-left: 5px;
     margin-right: 5px;

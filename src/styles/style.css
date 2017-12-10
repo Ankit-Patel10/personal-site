@@ -13,9 +13,8 @@
   box-sizing: border-box;
 }
 
-
-body, html{
-  height: 100%;
+body {
+  min-height: 100%;
 }
 
 html {
@@ -25,20 +24,13 @@ html {
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    background-color: #000;
+    background-color: #03131D;
     color: #fefefe;
     font-family: 'Muli', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-}
-
-.children {
-  margin-bottom: -150px;
-}
-
-.icon {
-  display: block;
+    height: 100%;
 }
 
 /* ANIMATIONS */
@@ -63,24 +55,25 @@ html {
   to { width: 175px; opacity: 1; }
 }
 
-@keyframes caption_animation {
-  from { padding-bottom: 0px; opacity: 0; }
-  to { padding-bottom: 40px; opacity: 1; }
-}
-
 /* GENERAL */
+.children {
+  min-height: 100%;
+  margin-bottom: 0px;
+}
 
 .main {
   margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  position: relative;
   text-align: center;
-  height: 540px;
+  min-height: calc(100vh - 110px);
   width: 640px;
   animation-name: opacity_animation;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   opacity: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 button {
@@ -181,8 +174,7 @@ h1::after {
 
 /* PROJECTS */
 .projects {
-  margin-top: 125px;
-  height: 700px;
+  height: 100%;
   width: 900px;
 }
 
@@ -196,7 +188,7 @@ h1::after {
   width: 250px;
   animation-name: line_animation2;
   animation-duration: 1.25s;
-  margin: 20px auto 25px auto;
+  margin: 20px auto 0px auto;
 }
 
 .projects a {
@@ -204,7 +196,7 @@ h1::after {
   color: #fcfcfc;
 }
 
-.btn {
+.project-box {
   font-family: 'Raleway';
   text-decoration: none;
   text-transform: uppercase;
@@ -214,7 +206,7 @@ h1::after {
   border: none;
   color: #fcfcfc;
   cursor: pointer;
-  margin: 15px 20px !important;
+  margin: 30px 20px 0px 20px;
   width: 370px;
   height: 190px;
   background: rgba(0,0,0,0.2);
@@ -243,9 +235,9 @@ h1::after {
   background-color: #79B773;
   content: '';
   width: 0px;
-  margin: 20px auto 15px auto;
+  margin: 20px auto 10px auto;
   opacity: 0;
-  transition: 0.1s linear;
+  transition: 0.15s;
 }
 
 .caption {
@@ -258,10 +250,10 @@ h1::after {
   right: 0;
   opacity: 0;
   padding-bottom: 0px;
-  transition: all 0.2s linear;
+  transition: 0.3s;
 }
 
-.btn::before, .btn::after {
+.project-box::before, .project-box::after {
   content:'';
   width: 0px;
   height: 1px;
@@ -279,40 +271,41 @@ h1::after {
   background: #49ACFE;
 }
 
-.btn:hover::before, .btn:hover::after {
+.project-box:hover::before, .project-box:hover::after {
   width: 100%;
 }
 
-.btn:hover .project-span::before, .btn:hover .project-span::after {
+.project-box:hover .project-span::before, .project-box:hover .project-span::after {
   height: 100%;
 }
 
-.btn::before {
+.project-box::before {
   right: 0;
   top: 0;
 }
 
-.btn::after {
+.project-box::after {
   left: 0;
   bottom: 0;
 }
 
-.btn span::before {
+.project-box span::before {
   left: 0;
   top: 0;
 }
 
-.btn span::after {
+.project-box span::after {
   right: 0;
   bottom: 0;
 }
 
-.btn span::before, .btn span::after, .btn:hover::before, .btn:hover::after {
+.project-box span::before, .project-box span::after,
+.project-box:hover::before, .project-box:hover::after {
   transition-delay: 0.2s;
 }
 
-.btn::before, .btn::after,
-.btn:hover span::before, .btn:hover span::after {
+.project-box::before, .project-box::after,
+.project-box:hover span::before, .project-box:hover span::after {
   transition-delay: 0s;
 }
 
@@ -321,11 +314,11 @@ h1::after {
   width: 100%;
 }
 
-.btn:hover .project-name {
+.project-box:hover .project-name {
   padding-top: 30px;
 }
 
-.btn:hover .project-name:after {
+.project-box:hover .project-name:after {
   width: 175px;
   opacity: 1;
   animation-name: project_line_animation;
@@ -333,12 +326,9 @@ h1::after {
   animation-timing-function: ease-in-out;
 }
 
-.btn:hover .caption {
+.project-box:hover .caption {
   padding-bottom: 40px;
   opacity: 1;
-  animation-name: caption_animation;
-  animation-duration: 0.3s;
-  animation-timing-function: ease;
 }
 
 .homelink {
@@ -348,13 +338,13 @@ h1::after {
 /* FOOTER */
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
   width: 100%;
-  height: 100px;
+  height: 60px;
 }
 
 .footer a {
@@ -363,7 +353,11 @@ h1::after {
   display: inline-block;
   color: #fcfcfc;
   text-decoration: none;
-  padding: 40px 15px 15px 15px;
+  padding: 0px 15px;
+}
+
+.footer .icon {
+  display: block;
 }
 
 .footer .git:hover {

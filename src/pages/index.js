@@ -16,8 +16,10 @@ class IndexPage extends React.Component {
 					<span className='green'> machine learning</span>. When I'm not programming,
 					you can find me playing underwater hockey or the trombone.
 				</p>
-				<a href='/Resume.pdf' target='_blank'><button className='button-purple'>Résumé</button></a>
-				<Link to='/projects'><button className='button-blue'>Projects</button></Link>
+				<div className='nav'>
+					<a href='/Resume.pdf' target='_blank'><button className='button-purple'>Résumé</button></a>
+					<Link to='/projects'><button className='button-blue'>Projects</button></Link>
+				</div>
 			</div>
 		);
 	}
