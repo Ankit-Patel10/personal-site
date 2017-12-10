@@ -39,12 +39,28 @@ class ProjectsPage extends React.Component {
           <h1>Projects</h1>
         </div>
         <div className='project-row'>
-          <Project name='Aya' href='http://devpost.com/software/aya'/>
-          <Project name='Messenger LaTeX' href='http://devpost.com/software/messenger-latex'/>
+          <Project
+            name='Aya'
+            href='http://devpost.com/software/aya'
+            caption='Robotic head with facial recognition.'
+          />
+          <Project
+            name='Automatic Cannon'
+            href='http://github.com/edwinzhng/automatic-cannon'
+            caption='Self-aiming projectile launching cannon.'
+          />
         </div>
         <div className='project-row'>
-          <Project name='Automatic Cannon' href='http://github.com/edwinzhng/automatic-cannon'/>
-          <Project name='Trendcast' href='http://devpost.com/software/trendcast'/>
+          <Project
+            name='Messenger LaTeX'
+            href='http://devpost.com/software/messenger-latex'
+            caption='Renders LaTeX in Facebook Messenger.'
+          />
+          <Project
+            name='Trendcast'
+            href='http://devpost.com/software/trendcast'
+            caption='Technology trend popularity predictor.'
+          />
         </div>
         <Link to='/'><button className='homelink button-purple'>Home</button></Link>
       </div>
