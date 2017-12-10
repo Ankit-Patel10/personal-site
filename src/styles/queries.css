@@ -1,6 +1,6 @@
 /* Small-medium width tablets: iPad mini */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .home h1 {
     font-size: 400%;
   }
@@ -11,13 +11,16 @@
   }
 
   .projects {
-    padding-top: 50px;
     width: 100%;
     min-height: 100%;
   }
 
   .projects h1 {
-    font-size: 400%;
+    font-size: 350%;
+  }
+
+  .projects a {
+    margin-top: 30px;
   }
 
   .footer {
@@ -65,15 +68,13 @@
   .about-text {
     max-width: 290px;
     font-size: 90%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   button {
     font-size: 90%;
     padding: 10px 15px;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: 5px;
+    margin: 25px 15px 5px 15px;
   }
 
   .projects {
@@ -84,6 +85,14 @@
 
   .projects h1 {
     font-size: 225%;
+  }
+
+  .projects h1:after {
+    margin-bottom: 10px;
+  }
+
+  .projects a {
+    margin-top: 30px;
   }
 
   .project-box {
@@ -102,16 +111,19 @@
 
   .caption {
     width: 250px;
-    font-size: 80%;
+    font-size: 75%;
   }
 
   .project-box:hover .caption {
     padding-bottom: 30px;
   }
 
-  .footer {
-    bottom: 0;
-    height: 60px;
+  .button-blue {
+    margin-right: 0px;
+  }
+
+  .button-purple {
+    margin-left: 0px;
   }
 }
 
@@ -140,19 +152,22 @@
     max-width: 235px;
   }
 
-  .footer {
-    font-size: 85%;
-    margin-top: 25px;
-  }
-
   .footer a {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
   .home button {
-    padding: 10px 5px;
+    padding: 10px 7px;
+  }
+
+  .button-blue {
+    margin-right: 0px;
     margin-left: 5px;
+  }
+
+  .button-purple {
+    margin-left: 0px;
     margin-right: 5px;
   }
 }

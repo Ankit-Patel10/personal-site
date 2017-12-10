@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300:400|Muli:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700|Muli:300,400');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 * {
@@ -22,9 +22,8 @@ html {
     url(../img/website-bg.png);
     background-attachment: fixed;
     background-position: center;
-    background-repeat: none;
     background-size: cover;
-    background-color: #03131D;
+    background-color: #02111B;
     color: #fefefe;
     font-family: 'Muli', 'Arial', sans-serif;
     font-weight: 300;
@@ -65,7 +64,7 @@ html {
   margin: auto;
   position: relative;
   text-align: center;
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 105px);
   width: 640px;
   animation-name: opacity_animation;
   animation-duration: 2s;
@@ -78,7 +77,6 @@ html {
 
 button {
   font-family: 'Raleway';
-  font-weight: 400;
   color: #fcfcfc;
   outline: none;
   border: 1px solid #FCFCFC;
@@ -96,12 +94,11 @@ button {
 
 /* CANVAS */
 #canvas {
-  position: absolute;
-  top: 0px;
+  position: fixed;
   left: 0px;
   height: 100%;
   width: 100%;
-  z-index: -999;
+  z-index: -100;
   animation-name: opacity_animation;
   animation-duration: 4s;
   animation-timing-function: ease-in;
@@ -174,6 +171,7 @@ h1::after {
 
 /* PROJECTS */
 .projects {
+  padding-top: 30px;
   height: 100%;
   width: 900px;
 }
@@ -183,17 +181,23 @@ h1::after {
 }
 
 .projects h1:after {
-  background-color: #A673A8;
+  background-color: #49ACFE;
   height: 1px;
   width: 250px;
   animation-name: line_animation2;
   animation-duration: 1.25s;
-  margin: 20px auto 0px auto;
+  margin: 35px auto 15px auto;
 }
 
 .projects a {
+  margin: 50px auto 0px auto;
+  max-width: 110px;
   text-decoration: none;
   color: #fcfcfc;
+}
+
+.projects button {
+  margin: 0px;
 }
 
 .project-box {
@@ -213,12 +217,45 @@ h1::after {
   transition: 0.3s;
 }
 
+.aya::after, .cannon::after, .latex::after, .trendcast::after {
+  content: "";
+  background-position: center !important;
+  background-size: cover !important;
+  opacity: 0.35;
+  top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.aya::after {
+  background-image: url('../img/aya.jpg');
+}
+
+.cannon::after {
+  background-image: url('../img/cannon.jpg');
+}
+
+.latex::after {
+  background-image: url('../img/messenger-latex.jpg');
+}
+
+.trendcast::after {
+  background-image: url('../img/trendcast.jpg');
+}
+
+.project-box:hover .aya::after, .project-box:hover .latex::after,
+.project-box:hover .cannon::after, .project-box:hover .trendcast::after {
+  opacity: 0.7;
+}
+
 .project-span {
   display: block;
 }
 
 .project-name {
-  font-size: 110%;
+  font-weight: 700;
+  font-size: 120%;
   margin: auto;
   position: absolute;
   top: 0;
@@ -256,19 +293,19 @@ h1::after {
 .project-box::before, .project-box::after {
   content:'';
   width: 0px;
-  height: 1px;
+  height: 2px;
   position: absolute;
-  transition: all 0.25s linear;
-  background: #49ACFE;
+  transition: all 0.2s linear;
+  background: #FCFCFC;
 }
 
 .project-span::before, .project-span::after {
   content:'';
-  width:1px;
+  width: 2px;
   height: 0px;
   position: absolute;
-  transition: all 0.25s linear;
-  background: #49ACFE;
+  transition: all 0.2s linear;
+  background: #FCFCFC;
 }
 
 .project-box:hover::before, .project-box:hover::after {
@@ -331,20 +368,16 @@ h1::after {
   opacity: 1;
 }
 
-.homelink {
-  margin-top: 25px;
-}
-
 /* FOOTER */
 
 .footer {
   position: relative;
   bottom: 0;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   width: 100%;
-  height: 60px;
+  height: 105px;
 }
 
 .footer a {
@@ -353,11 +386,11 @@ h1::after {
   display: inline-block;
   color: #fcfcfc;
   text-decoration: none;
-  padding: 0px 15px;
 }
 
 .footer .icon {
   display: block;
+  padding: 0px 15px;
 }
 
 .footer .git:hover {

@@ -11,7 +11,7 @@ var rmin  = 0.9;
 var count = 0;
 
 var particles = [];
-var numParticles = 175;
+var numParticles = 150;
 var maxv = 1;
 
 function initParticles() {
@@ -58,8 +58,6 @@ function resetParticle(i) {
   if(count % 30 == 0) {
     vx *= 3;
     vy *= 3;
-    console.log(vx);
-    console.log(vy);
   }
   particles[i].x = x0;
   particles[i].y = y0;

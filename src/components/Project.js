@@ -5,7 +5,7 @@ class Project extends React.Component {
     return (
       <div className='project-box'>
         <a href={this.props.href} target='_blank'>
-          <div className="link-box">
+          <div className={this.props.classes}>
             <span className='project-span'></span>
             <span className='project-name'>{this.props.name}</span>
             <span className='caption'>{this.props.caption}</span>
