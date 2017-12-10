@@ -55,7 +55,10 @@
   }
 
   .home button {
-    font-size: 95%;
+    font-size: 90%;
+    padding: 10px 15px;
+    margin-left: 7px;
+    margin-right: 7px;
   }
 
   .children {
@@ -84,7 +87,7 @@
   }
 
   .home {
-    max-width: 220px;
+    max-width: 230px;
   }
 
   .home h1 {
@@ -97,7 +100,7 @@
   }
 
   .about-text {
-    max-width: 220px;
+    max-width: 230px;
   }
 
   .footer {
@@ -108,5 +111,12 @@
   .footer a {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .home button {
+    font-size: 85%;
+    padding: 10px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }

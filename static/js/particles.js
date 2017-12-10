@@ -11,7 +11,7 @@ var rmin  = 0.9;
 var count = 0;
 
 var particles = [];
-var numParticles = 200;
+var numParticles = 175;
 var maxv = 1;
 
 function initParticles() {

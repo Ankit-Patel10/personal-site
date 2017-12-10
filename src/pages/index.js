@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 class IndexPage extends React.Component {
 	render() {
 		return (
-			<div className='home'>
+			<div className='main home'>
 				<div className ='name'>
           <h1>Edwin Zhang</h1>
         </div>
@@ -15,8 +16,8 @@ class IndexPage extends React.Component {
 					<span className='green'> machine learning</span>. When I'm not programming,
 					you can find me playing underwater hockey or the trombone.
 				</p>
-				<a href="/Resume.pdf" target='_blank'><button className='transition'>Résumé</button></a>
-				{ /* <button className='transition'>Projects</button> */ }
+				<a href='/Resume.pdf' target='_blank'><button className='button-purple'>Résumé</button></a>
+				<Link to='/projects'><button className='button-blue'>Projects</button></Link>
 			</div>
 		);
 	}

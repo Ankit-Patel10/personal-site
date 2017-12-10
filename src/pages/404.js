@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
+import Link from 'gatsby-link'
 
 class NotFoundPage extends React.Component {
   render() {
     return (
-      <div class="notfound">
-        <h2>Oops, this page doesn't exist yet!</h2>
+      <div className="main notfound">
+        <h2>Oops, this page doesn't exist!</h2>
+        <Link to='/'><button className='homelink button-blue'>Home</button></Link>
       </div>
     );
   }

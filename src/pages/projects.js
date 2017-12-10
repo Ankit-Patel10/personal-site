@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import Project from '../components/Project.js'
 
 class ProjectsPage extends React.Component {
   render() {
@@ -32,15 +34,19 @@ class ProjectsPage extends React.Component {
       */ }
 
     return (
-      <div className='project-row'>
-        { /*
-        <Project
-          link='http://devpost.com/software/messenger-latex'
-        />
-        <Project
-          link='http://devpost.com/software/aya'
-        />
-        */ }
+      <div className='main projects'>
+        <div className='title'>
+          <h1>Projects</h1>
+        </div>
+        <div className='project-row'>
+          <Project name='Aya' href='http://devpost.com/software/aya'/>
+          <Project name='Messenger LaTeX' href='http://devpost.com/software/messenger-latex'/>
+        </div>
+        <div className='project-row'>
+          <Project name='Automatic Cannon' href='http://github.com/edwinzhng/automatic-cannon'/>
+          <Project name='Trendcast' href='http://devpost.com/software/trendcast'/>
+        </div>
+        <Link to='/'><button className='homelink button-purple'>Home</button></Link>
       </div>
     );
   }

@@ -1,14 +1,13 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "personal-site",
+  "description": "Personal Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Edwin Zhang",
   "dependencies": {
     "gatsby": "^1.8.10",
     "gatsby-link": "^1.6.5",
     "gatsby-plugin-google-analytics": "^1.0.5",
-    "gatsby-plugin-react-helmet": "^1.0.1",
-    "react-transition-group": "^2.2.1"
+    "gatsby-plugin-react-helmet": "^1.0.1"
   },
   "keywords": [
     "gatsby"

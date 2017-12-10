@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300|Muli:300,400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Muli:300,400,600');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 * {
@@ -6,6 +6,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 body, html{
   height: 100%;
@@ -30,10 +37,6 @@ html {
   margin-bottom: -150px;
 }
 
-.transition {
-    transition: all 0.1s linear;
-}
-
 .icon {
   display: block;
 }
@@ -50,6 +53,43 @@ html {
   to { width: 300px; }
 }
 
+@keyframes line_animation2 {
+  from { width: 0px; }
+  to { width: 250px; }
+}
+
+/* GENERAL */
+
+.main {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  height: 540px;
+  width: 640px;
+  animation-name: opacity_animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  opacity: 100%;
+}
+
+button {
+  font-family: 'Raleway';
+  color: #fcfcfc;
+  outline: none;
+  border: 1px solid #FCFCFC;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 100%;
+  margin: 0px 15px 30px 15px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.05s ease-out;
+}
+
 /* CANVAS */
 #canvas {
   position: absolute;
@@ -63,24 +103,8 @@ html {
   animation-timing-function: ease-in;
 }
 
-
 /* HOME */
-
-.home {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  text-align: center;
-  height: 540px;
-  width: 640px;
-  animation-name: opacity_animation;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  opacity: 100%;
-}
-
-
-.home h1 {
+h1 {
   font-family: 'Raleway', sans-serif;
   transform: scaleY(0.97);
   letter-spacing: 2px;
@@ -90,7 +114,7 @@ html {
   text-transform: uppercase;
 }
 
-.home h1::after {
+h1::after {
   display: block;
   height: 1px;
   background-color: #A3548B;
@@ -134,40 +158,125 @@ html {
   font-weight: 400 !important;
 }
 
-.home button {
-  font-family: 'Raleway';
-  color: #fcfcfc;
-  outline: none;
-  border: 1px solid #FCFCFC;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-size: 100%;
-  margin: 0px 15px 30px 15px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+.button-blue:hover {
+  color: #49ACFE;
+  border-color: #49ACFE;
 }
 
-.home button:hover {
+.button-purple:hover {
   color: #A673A8;
   border-color: #A673A8;
-  cursor: pointer;
 }
 
 /* PROJECTS */
-
-.project-wrapper {
-  width: 410px;
-  height: auto;
-  margin: 15% auto;
-  vertical-align: middle;
+.projects {
+  margin-top: 125px;
+  height: 700px;
+  width: 900px;
 }
 
-.emphasis {
-  color: #327D2A;
+.projects h1 {
+  font-size: 350%;
 }
 
+.projects h1:after {
+  background-color: #49ACFE;
+  width: 250px;
+  animation-name: line_animation2;
+  animation-duration: 1.25s;
+  margin: 15px auto;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.btn {
+  font-family: 'Raleway';
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  border: none;
+  color: #fcfcfc;
+  cursor: pointer;
+  margin: 15px 20px !important;
+  width: 340px;
+  height: 170px;
+  background: rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.project-span {
+  display: block;
+  padding-top: 70px;
+}
+
+.btn::before, .btn::after {
+  content:'';
+  width: 0px;
+  height: 1px;
+  position: absolute;
+  transition: all 0.25s linear;
+  background: #79B773;
+}
+
+.project-span::before, .project-span::after {
+  content:'';
+  width:1px;
+  height: 0px;
+  position: absolute;
+  transition: all 0.25s linear;
+  background: #79B773;
+}
+
+.btn:hover::before, .btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover .project-span::before, .btn:hover .project-span::after {
+  height: 100%;
+}
+
+.btn::before {
+  right: 0;
+  top: 0;
+}
+
+.btn::after {
+  left: 0;
+  bottom: 0;
+}
+
+.btn span::before {
+  left: 0;
+  top: 0;
+}
+
+.btn span::after {
+  right: 0;
+  bottom: 0;
+}
+
+.btn span::before, .btn span::after, .btn:hover::before, .btn:hover::after {
+  transition-delay: 0.2s;
+}
+
+.btn::before, .btn::after,
+.btn:hover span::before, .btn:hover span::after {
+  transition-delay: 0s;
+}
+
+.link-box {
+  height: 100%;
+  width: 100%;
+}
+
+.homelink {
+  margin-top: 40px;
+}
 
 /* FOOTER */
 
@@ -185,7 +294,7 @@ html {
   font-size: 200%;
   outline: 0;
   display: inline-block;
-  color: #FEFEFE;
+  color: #fcfcfc;
   text-decoration: none;
   padding: 40px 15px 15px 15px;
 }
@@ -203,17 +312,9 @@ html {
 }
 
 /* NOT FOUND */
-.notfound {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  margin: 40% auto;
-  padding-top: 12.5%;
-}
-
 .notfound h2 {
   font-weight: 300;
   color: #fcfcfc;
   padding: 19px;
-  font-size: 130%;
+  font-size: 170%;
 }
