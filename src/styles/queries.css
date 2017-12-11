@@ -32,17 +32,39 @@
   }
 }
 
+/* Horizontal Phones */
+
+@media only screen and (max-width: 767px) {
+  #canvas {
+    width: 0;
+    height: 0;
+  }
+}
+
+/* Vertical Tablets */
+
+@media only screen and (max-width: 670px) {
+  .home {
+    padding-top: 30px;
+    height: 100%;
+    max-width: 525px;
+  }
+
+  .home h1 {
+    font-size: 350%;
+  }
+
+  .about-text {
+    max-width: 525px;
+  }
+}
+
 /* Small phone screens*/
 
 @media only screen and (max-width: 480px) {
   @keyframes line_animation {
     from { width: 0px; }
     to { width: 290px; }
-  }
-
-  #canvas {
-    width: 0;
-    height: 0;
   }
 
   .home {
@@ -74,7 +96,7 @@
   button {
     font-size: 90%;
     padding: 10px 15px;
-    margin: 25px 15px 5px 15px;
+    margin: 25px 17px 5px 17px;
   }
 
   .projects {
@@ -96,7 +118,7 @@
   }
 
   .project-box {
-    width: 275px;
+    width: 285px;
     height: 150px;
   }
 
@@ -110,8 +132,8 @@
   }
 
   .caption {
-    width: 250px;
-    font-size: 75%;
+    width: 280px;
+    font-size: 72%;
   }
 
   .project-box:hover .caption {
@@ -148,6 +170,11 @@
     margin: 15px auto 0px auto;
   }
 
+  .project-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .about-text {
     max-width: 235px;
   }
@@ -163,11 +190,11 @@
 
   .button-blue {
     margin-right: 0px;
-    margin-left: 5px;
+    margin-left: 6px;
   }
 
   .button-purple {
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 6px;
   }
 }
