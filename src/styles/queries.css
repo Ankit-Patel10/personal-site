@@ -63,8 +63,13 @@
 
 @media only screen and (max-width: 480px) {
   @keyframes line_animation {
-    from { width: 0px; }
-    to { width: 290px; }
+    from { transform: scaleX(0); }
+    to { transform: scaleX(290); }
+  }
+
+  @keyframes line_animation2 {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(290); }
   }
 
   .home {
@@ -78,7 +83,7 @@
   }
 
   .home h1:after {
-    width: 290px;
+    transform: scaleX(290);
     margin: 20px auto 5px auto;
   }
 
@@ -106,10 +111,11 @@
   }
 
   .projects h1 {
-    font-size: 225%;
+    font-size: 250%;
   }
 
   .projects h1:after {
+    transform: scaleX(285);
     margin-bottom: 10px;
   }
 
@@ -154,8 +160,13 @@
 
 @media only screen and (max-width: 320px) {
   @keyframes line_animation {
-    from { width: 0px; }
-    to { width: 235px; }
+    from { transform: scaleX(0); }
+    to { transform: scaleX(235); }
+  }
+
+  @keyframes line_animation2 {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(285); }
   }
 
   .home {
@@ -167,7 +178,7 @@
   }
 
   .home h1:after {
-    width: 235px;
+    transform: scaleX(235);
     margin: 15px auto 0px auto;
   }
 
