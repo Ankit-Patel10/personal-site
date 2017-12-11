@@ -136,8 +136,9 @@
     font-size: 72%;
   }
 
-  .project-box:hover .caption {
-    padding-bottom: 30px;
+  .project-box:hover .project-name, .project-box:hover .caption {
+    -webkit-transform:translate3d(0,-35px,0);
+    transform:translate3d(0,-35px,0);
   }
 
   .button-blue {

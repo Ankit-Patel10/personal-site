@@ -266,11 +266,11 @@ h1::after {
   height: 1px;
   background-color: #79B773;
   content: '';
-  width: 0px;
+  width: 1px;
+  transform: scaleX(0);
   margin: 20px auto 10px auto;
-  opacity: 0;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
 }
 
 .caption {
@@ -357,8 +357,9 @@ h1::after {
 }
 
 .project-box:hover .project-name:after {
+  transform: scaleX(175);
   opacity: 1;
-  width: 175px;
+  transition: 0.4s;
 }
 
 .project-box:hover .caption {
