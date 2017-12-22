@@ -20,12 +20,13 @@ html {
     background-position: center;
     background-size: cover;
     background-color: #02111B;
-    color: #fefefe;
+    color: #fcfcfc;
     font-family: 'Muli', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     height: 100%;
+    text-align: center;
 }
 
 /* ANIMATIONS */
@@ -54,7 +55,6 @@ html {
 .main {
   margin: auto;
   position: relative;
-  text-align: center;
   min-height: calc(100vh - 105px);
   width: 640px;
   animation-name: opacity_animation;
@@ -70,7 +70,7 @@ button {
   font-family: 'Raleway';
   color: #fcfcfc;
   outline: none;
-  border: 1px solid #FCFCFC;
+  border: 1px solid #fcfcfc;
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -101,7 +101,6 @@ h1 {
   font-family: 'Raleway', sans-serif;
   transform: scaleY(0.97);
   letter-spacing: 2px;
-  color: #fcfcfc;
   font-weight: 300;
   font-size: 430%;
   text-transform: uppercase;
@@ -122,7 +121,6 @@ h1::after {
 
 .home h2 {
   font-weight: 300;
-  color: #fcfcfc;
   padding: 19px;
   font-size: 130%;
 }
@@ -130,26 +128,27 @@ h1::after {
 .about-text {
   margin: 0px auto 45px auto;
   vertical-align: middle;
-  text-align: justify;
+  text-align: justify !important;
   font-size: 95%;
   width: 630px;
   letter-spacing: 0.5px;
   line-height: 1.6;
 }
 
+.green, .blue, .purple {
+  font-weight: 400 !important;
+}
+
 .green {
   color: #79B773;
-  font-weight: 400 !important;
 }
 
 .blue {
   color: #49ACFE;
-  font-weight: 400 !important;
 }
 
 .purple {
   color: #A673A8;
-  font-weight: 400 !important;
 }
 
 .button-blue:hover {
@@ -197,13 +196,11 @@ h1::after {
 .project-box {
   overflow: hidden;
   font-family: 'Raleway';
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
   position: relative;
   border: none;
-  color: #fcfcfc;
   cursor: pointer;
   margin: 30px 20px 0px 20px;
   width: 370px;
@@ -247,23 +244,19 @@ h1::after {
 }
 
 .project-box::before {
-  right: 0;
-  top: 0;
+  right: 0; top: 0;
 }
 
 .project-box::after {
-  left: 0;
-  bottom: 0;
+  left: 0; bottom: 0;
 }
 
 .project-box span::before {
-  left: 0;
-  top: 0;
+  left: 0; top: 0;
 }
 
 .project-box span::after {
-  right: 0;
-  bottom: 0;
+  right: 0; bottom: 0;
 }
 
 .project-box span::before, .project-box span::after,
@@ -283,10 +276,7 @@ h1::after {
   font-size: 120%;
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   padding-top: 80px;
   transition: 0.35s;
   -webkit-transition: 0.35s;
@@ -309,9 +299,7 @@ h1::after {
   font-size: 90%;
   margin: 0 auto;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 0; left: 0; right: 0;
   opacity: 0;
   padding-bottom: 0px;
   transition: 0.35s;
@@ -373,13 +361,11 @@ h1::after {
   opacity: 0.7;
 }
 
-
 /* FOOTER */
 
 .footer {
   position: relative;
   bottom: 0;
-  text-align: center;
   padding-top: 25px;
   padding-bottom: 30px;
   width: 100%;
@@ -414,7 +400,6 @@ h1::after {
 /* NOT FOUND */
 .notfound h2 {
   font-weight: 300;
-  color: #fcfcfc;
   padding: 19px;
   font-size: 170%;
 }

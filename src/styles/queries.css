@@ -106,8 +106,6 @@
 
   .projects {
     padding-top: 30px;
-    width: 100%;
-    min-height: 100%;
   }
 
   .projects h1 {
@@ -117,10 +115,6 @@
   .projects h1:after {
     transform: scaleX(285);
     margin-bottom: 10px;
-  }
-
-  .projects a {
-    margin-top: 30px;
   }
 
   .project-box {
@@ -191,17 +185,10 @@
   }
 
   .button-blue {
-    margin-right: 0px;
     margin-left: 6px;
   }
 
   .button-purple {
-    margin-left: 0px;
     margin-right: 6px;
-  }
-
-  .footer a {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
